@@ -8,6 +8,10 @@ var _ = require('underscore');
 var color = require('cli-color');
 var db = require('../../database');
 var Users = db.users;
+var bodyParser = require('body-parser');
+var app = express();
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 // The POST /signup route
 router.post('/', function (req, res) {
@@ -35,7 +39,8 @@ router.post('/', function (req, res) {
             res.status(500).json({
                 'message': 'Internal server error from signing up new user. Please contact support@yourproject.com.'
             });
-        }
+        }        
+        
 
         // If the user doesn't exist, create one
         if (!user) {
@@ -76,7 +81,6 @@ router.post('/', function (req, res) {
                 'message': body.email + ' already exists!'
             });
         }
-
     });
 
 });

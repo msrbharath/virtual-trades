@@ -11,12 +11,12 @@ var app = express();
 /**
  * Routes
  */
-var router = require('./router/index')(app);
+var router = require('./router')(app);
 
 //var index = require('./routes/index');
 //var users = require('./routes/users');
 
-// view engine setup
+// view engine setup --> Dummy code - To be removed in future.
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 

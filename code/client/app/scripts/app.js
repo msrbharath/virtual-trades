@@ -38,6 +38,21 @@ angular
         controller: 'SignupCtrl',
         controllerAs: 'signup'
       })
+      .when('/products', {
+        templateUrl: 'views/products.html',
+        controller: 'ProductsCtrl',
+        controllerAs: 'products'
+      })
+      .when('/catalogue', {
+        templateUrl: 'views/catalogue.html',
+        controller: 'CatalogueCtrl',
+        controllerAs: 'catalogue'
+      })
+      .when('/projects', {
+        templateUrl: 'views/projects.html',
+        controller: 'ProjectsCtrl',
+        controllerAs: 'projects'
+      })
       .otherwise({
         redirectTo: '/'
       });

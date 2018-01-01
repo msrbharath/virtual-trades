@@ -34,3 +34,5 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function callback () {
   console.log('Databsae Connection Successfully Opened at ' + usedDb);
 });
+
+exports.users = UserModel;
