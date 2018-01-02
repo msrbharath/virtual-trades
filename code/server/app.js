@@ -8,11 +8,6 @@ var bodyParser = require('body-parser');
 var cors = require('cors')
 
 var app = express();
-/**
- * Routes
- */
-var router = require('./router')(app);
-
 //var index = require('./routes/index');
 //var users = require('./routes/users');
 
@@ -31,6 +26,12 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //app.use('/api/users', users); // <-- note we're calling this API
+/**
+ * Routes
+ */
+var router = require('./router')(app);
+
+
 
 // In production, we'll actually serve our angular app from express
 if (app.get('env') === 'production') {  

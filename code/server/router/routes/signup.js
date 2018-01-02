@@ -8,10 +8,6 @@ var _ = require('underscore');
 var color = require('cli-color');
 var db = require('../../database');
 var Users = db.users;
-var bodyParser = require('body-parser');
-var app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 
 // The POST /signup route
 router.post('/', function (req, res) {
@@ -20,7 +16,6 @@ router.post('/', function (req, res) {
     var body = req.body;
     // Current time this occurred
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
-
     // Check to see if the user already exists
     // using their email address
     Users.findOne({
