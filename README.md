@@ -1,2 +1,2 @@
 # virtual-trades
-Virtual Trades Repository
+ArcheTrades Repository
