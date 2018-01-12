@@ -1,6 +1,6 @@
 'use strict'; 
 
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('SignUpCtrl', ['$scope', function ($scope) {
     
     $scope.name = 'Sundar';

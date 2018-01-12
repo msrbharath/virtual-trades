@@ -2,20 +2,20 @@
 
 /**
  * @ngdoc function
- * @name virtualtradeApp.controller:MainCtrl
+ * @name archeTradesApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the virtualtradeApp
+ * Controller of the archeTradesApp
  */
  
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .factory('States', function(){
   var states = ['Furniture_1', 'Furniture_2', 'Furniture_3', 'Furniture_4', 'Furniture_5', 'Furniture_6', 'Furniture_7', 'Furniture_8', 'Furniture_9', 'Furniture_10', 'Tiles_1', 'Tiles_2', 'Tiles_3', 'Tiles_4', 'Tiles_5', 'Tiles_6', 'Sandol Box_1', 'Sandol Box_2', 'Sandol Box_3', 'Bolts_1', 'Bolts_2', 'Bolts_3', 'Dining table_1', 'Dining table_2', 'Dining table_3', 'Dining table_4', 'Dining table_5', 'Dining table_6', 'Dining table_7', 'Dining table_8', 'Dining table_9', 'Car_plot1', 'Car_plot2', 'Car_plot2', 'Car_plot3', 'Car_plot4', 'ceiling_fan1', 'ceiling_fan2', 'ceiling_fan4', 'ceiling_fan5', 'ceiling_fan6', 'ceiling_fan7', 'ceiling_fan8', 'ceiling_fan9', 'ceiling_fan10', 'table fan_1', 'table fan_2', 'table fan_3', 'table fan_4', 'table fan_5'];
   
   return states;
   
 }); 
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('MainCtrl', ['$scope', '$window', 'States', function ($scope,$window,States) {
     
     $scope.selected = undefined;
@@ -39,7 +39,7 @@ angular.module('virtualtradeApp')
 
   }]);
 
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('signInCtrl', ['$scope', '$window','$http', function ($scope, $window, $http) {
     	$scope.cname = '';
     	$scope.password ='';
@@ -82,7 +82,7 @@ angular.module('virtualtradeApp')
   }]);
 
 
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('productsCtrl', ['$scope', '$window', function ($scope, $window) {
     	console.log($window);
     	$scope.userName = 'Meenakshisundaram';
@@ -105,7 +105,7 @@ angular.module('virtualtradeApp')
 
   }]);
 
-  angular.module('virtualtradeApp')
+  angular.module('archeTradesApp')
   .controller('furnitureCtrl', ['$scope', '$window', function ($scope, $window) {
     	console.log($window);
 

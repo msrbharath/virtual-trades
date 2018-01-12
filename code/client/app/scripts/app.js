@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name virtualtradeApp
+ * @name archeTradesApp
  * @description
- * # virtualtradeApp
+ * # archeTradesApp
  *
  * Main module of the application.
  */
 angular
-  .module('virtualtradeApp', [
+  .module('archeTradesApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

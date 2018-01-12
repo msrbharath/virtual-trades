@@ -3,7 +3,7 @@
 describe('Controller: ProductsCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('clientApp'));
+  beforeEach(module('archeTradesApp'));
 
   var ProductsCtrl,
     scope;

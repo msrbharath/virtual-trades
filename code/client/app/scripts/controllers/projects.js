@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name clientApp.controller:ProjectsCtrl
+ * @name archeTradesApp.controller:ProjectsCtrl
  * @description
  * # ProjectsCtrl
- * Controller of the clientApp
+ * Controller of the archeTradesApp
  */
-angular.module('clientApp')
+angular.module('archeTradesApp')
   .controller('ProjectsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',

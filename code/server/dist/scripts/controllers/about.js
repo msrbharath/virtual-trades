@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc function
- * @name virtualtradeApp.controller:AboutCtrl
+ * @name archeTradesApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the virtualtradeApp
+ * Controller of the archeTradesApp
  */
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('AboutCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
@@ -17,7 +17,7 @@ angular.module('virtualtradeApp')
   });
 
 
-angular.module('virtualtradeApp')
+angular.module('archeTradesApp')
   .controller('SignUpCtrl', ['$scope', '$window', '$http', function ($scope, $window, $http) {
     $scope.errorArray = [];
     $scope.password1='';
