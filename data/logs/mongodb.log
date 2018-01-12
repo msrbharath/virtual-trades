@@ -1,104 +1,61 @@
-2017-12-30T01:24:30.086+0530 I CONTROL  [initandlisten] MongoDB starting : pid=87527 port=27017 dbpath=data/db/ 64-bit host=Bharaths-MBP
-2017-12-30T01:24:30.087+0530 I CONTROL  [initandlisten] db version v3.2.9
-2017-12-30T01:24:30.087+0530 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
-2017-12-30T01:24:30.087+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
-2017-12-30T01:24:30.087+0530 I CONTROL  [initandlisten] allocator: system
-2017-12-30T01:24:30.088+0530 I CONTROL  [initandlisten] modules: none
-2017-12-30T01:24:30.088+0530 I CONTROL  [initandlisten] build environment:
-2017-12-30T01:24:30.088+0530 I CONTROL  [initandlisten]     distarch: x86_64
-2017-12-30T01:24:30.088+0530 I CONTROL  [initandlisten]     target_arch: x86_64
-2017-12-30T01:24:30.088+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db/" }, systemLog: { destination: "file", logAppend: true, path: "data/logs/mongodb.log" } }
-2017-12-30T01:24:30.088+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=9G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
-2017-12-30T01:24:30.300+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
-2017-12-30T01:24:30.300+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
-2017-12-30T01:24:30.350+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
-2017-12-30T05:49:28.893+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain address information for hostname Bharaths-MBP: nodename nor servname provided, or not known
-2017-12-30T21:13:20.547+0530 I CONTROL  [main] ***** SERVER RESTARTED *****
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] MongoDB starting : pid=18905 port=27017 dbpath=data/db/ 64-bit host=Bharaths-MacBook-Pro.local
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] db version v3.2.9
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] git version: 22ec9e93b40c85fc7cae7d56e7d6a02fd811088c
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 0.9.8zh 14 Jan 2016
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] allocator: system
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] modules: none
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] build environment:
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten]     distarch: x86_64
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten]     target_arch: x86_64
-2017-12-30T21:13:20.579+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db/" }, systemLog: { destination: "file", logAppend: true, path: "data/logs/mongodb.log" } }
-2017-12-30T21:13:20.581+0530 I -        [initandlisten] Detected data files in data/db/ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
-2017-12-30T21:13:20.581+0530 W -        [initandlisten] Detected unclean shutdown - data/db/mongod.lock is not empty.
-2017-12-30T21:13:20.581+0530 W STORAGE  [initandlisten] Recovering data from the last clean checkpoint.
-2017-12-30T21:13:20.581+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=9G,session_max=20000,eviction=(threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=60,log_size=2GB),statistics_log=(wait=0),
-2017-12-30T21:13:21.272+0530 I NETWORK  [HostnameCanonicalizationWorker] Starting hostname canonicalization worker
-2017-12-30T21:13:21.272+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
-2017-12-30T21:13:21.274+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
-2017-12-30T21:13:22.022+0530 I FTDC     [ftdc] Unclean full-time diagnostic data capture shutdown detected, found interim file, some metrics may have been lost. OK
-2017-12-30T21:28:24.507+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-30T23:39:49.787+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-30T23:54:52.835+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T00:05:14.440+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58779 #1 (1 connection now open)
-2017-12-31T00:05:14.551+0530 I INDEX    [conn1] build index on: prod.User properties: { v: 1, unique: true, key: { email: 1 }, name: "email_1", ns: "prod.User", background: true }
-2017-12-31T00:05:14.552+0530 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
-2017-12-31T00:05:44.016+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58795 #2 (2 connections now open)
-2017-12-31T00:05:44.098+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58796 #3 (3 connections now open)
-2017-12-31T00:06:51.776+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58839 #4 (4 connections now open)
-2017-12-31T00:06:51.821+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:58840 #5 (5 connections now open)
-2017-12-31T00:09:55.615+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T00:11:27.304+0530 I NETWORK  [conn1] end connection 127.0.0.1:58779 (4 connections now open)
-2017-12-31T00:11:29.907+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:59861 #6 (5 connections now open)
-2017-12-31T00:17:27.966+0530 I NETWORK  [conn6] end connection 127.0.0.1:59861 (4 connections now open)
-2017-12-31T00:17:30.664+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:61422 #7 (5 connections now open)
-2017-12-31T00:24:58.289+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T00:28:28.330+0530 I NETWORK  [conn7] end connection 127.0.0.1:61422 (4 connections now open)
-2017-12-31T00:28:31.275+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:64222 #8 (5 connections now open)
-2017-12-31T00:36:48.466+0530 I NETWORK  [conn8] end connection 127.0.0.1:64222 (4 connections now open)
-2017-12-31T00:36:51.379+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:50029 #9 (5 connections now open)
-2017-12-31T00:40:00.991+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T01:05:48.361+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain address information for hostname Bharaths-MacBook-Pro.local: nodename nor servname provided, or not known
-2017-12-31T01:15:54.359+0530 I COMMAND  [PeriodicTaskRunner] task: UnusedLockCleaner took: 115ms
-2017-12-31T05:26:50.101+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T10:41:57.317+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T10:56:57.039+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T11:11:59.651+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T11:27:02.295+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T11:42:05.020+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T11:57:08.173+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T12:12:10.923+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T12:55:08.269+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T13:21:22.599+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T13:36:25.956+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T13:51:28.354+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T14:06:31.462+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T14:21:33.781+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T14:51:52.512+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T17:51:08.013+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T19:11:19.348+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2017-12-31T21:04:33.135+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T00:10:00.412+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T03:27:06.062+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T07:57:28.314+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T11:07:35.840+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T11:22:38.472+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T11:37:41.244+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T13:17:18.716+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T13:32:21.442+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T13:47:24.530+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T14:02:27.220+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T14:17:30.252+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T14:48:59.484+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T15:27:19.706+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T15:42:22.456+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T15:57:24.447+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T16:12:27.086+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T16:27:30.216+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T16:42:33.055+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T16:57:36.146+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T16:59:25.411+0530 I NETWORK  [conn9] end connection 127.0.0.1:50029 (4 connections now open)
-2018-01-01T17:00:02.655+0530 I NETWORK  [initandlisten] connection accepted from 127.0.0.1:65485 #10 (5 connections now open)
-2018-01-01T17:19:38.288+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T17:34:40.998+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T17:49:43.783+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T18:04:46.432+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T18:20:32.561+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T18:35:35.260+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T20:23:35.707+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
-2018-01-01T20:43:26.984+0530 W NETWORK  [HostnameCanonicalizationWorker] Failed to obtain name info for: [ (192.168.0.102, "nodename nor servname provided, or not known"), (192.168.0.102, "nodename nor servname provided, or not known") ]
+2018-01-12T17:50:06.297+0530 I CONTROL  [initandlisten] MongoDB starting : pid=18268 port=27017 dbpath=data/db 64-bit host=CDC5-L-4ZJBLC2
+2018-01-12T17:50:06.298+0530 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] db version v3.6.1
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] git version: 025d4f4fe61efd1fb6f0005be20cb45a004093d1
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] modules: none
+2018-01-12T17:50:06.299+0530 I CONTROL  [initandlisten] build environment:
+2018-01-12T17:50:06.300+0530 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2018-01-12T17:50:06.300+0530 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-12T17:50:06.300+0530 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-12T17:50:06.300+0530 I CONTROL  [initandlisten] options: { storage: { dbPath: "data/db/" }, systemLog: { destination: "file", logAppend: true, path: "data/logs/mongodb.log" } }
+2018-01-12T17:50:06.307+0530 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7621M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] 
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-01-12T17:50:09.455+0530 I CONTROL  [initandlisten] 
+2018-01-12T17:50:09.456+0530 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: d399ba6e-1b62-4e2c-9d5a-52ac31ebd7d8
+2018-01-12T17:50:10.167+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2018-01-12T17:50:10.175+0530 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: f111ce1d-c26d-4f66-b74c-295cdfec128e
+2018-01-12T17:50:13.089+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'data/db/diagnostic.data'
+2018-01-12T17:50:13.094+0530 I NETWORK  [initandlisten] waiting for connections on port 27017
+2018-01-12T17:50:52.818+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54228 #1 (1 connection now open)
+2018-01-12T17:50:52.829+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:54228 conn: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10586" }, platform: "Node.js v8.1.0, LE, mongodb-core: 3.0.1" }
+2018-01-12T17:50:52.867+0530 I STORAGE  [conn1] createCollection: prod.users with generated UUID: 7b77a328-8a3b-49a5-9f7c-ad751389bc8f
+2018-01-12T17:50:53.977+0530 I INDEX    [conn1] build index on: prod.users properties: { v: 2, unique: true, key: { email: 1 }, name: "email_1", ns: "prod.users", background: true }
+2018-01-12T17:50:53.977+0530 I INDEX    [conn1] build index done.  scanned 0 total records. 0 secs
+2018-01-12T17:50:53.977+0530 I COMMAND  [conn1] command prod.$cmd command: createIndexes { createIndexes: "users", indexes: [ { name: "email_1", key: { email: 1 }, unique: true, background: true } ], lsid: { id: UUID("0a285119-1730-4ecd-b541-894267a118f7") }, $db: "prod" } numYields:0 reslen:113 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { w: 1, W: 2 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_query 1109ms
+2018-01-12T17:53:25.113+0530 I NETWORK  [conn1] end connection 127.0.0.1:54228 (0 connections now open)
+2018-01-12T17:53:27.736+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54278 #2 (1 connection now open)
+2018-01-12T17:53:27.746+0530 I NETWORK  [conn2] received client metadata from 127.0.0.1:54278 conn: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10586" }, platform: "Node.js v8.1.0, LE, mongodb-core: 3.0.1" }
+2018-01-12T17:53:28.718+0530 I NETWORK  [conn2] end connection 127.0.0.1:54278 (0 connections now open)
+2018-01-12T17:53:55.186+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54288 #3 (1 connection now open)
+2018-01-12T17:53:55.199+0530 I NETWORK  [conn3] received client metadata from 127.0.0.1:54288 conn: { driver: { name: "nodejs", version: "3.0.1" }, os: { type: "Windows_NT", name: "win32", architecture: "x64", version: "10.0.10586" }, platform: "Node.js v8.1.0, LE, mongodb-core: 3.0.1" }
+2018-01-12T17:55:13.094+0530 I STORAGE  [thread4] createCollection: config.system.sessions with generated UUID: 8d06f640-b471-4dc7-8533-fa0ee60e476a
+2018-01-12T17:55:13.636+0530 I INDEX    [thread4] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-01-12T17:55:13.637+0530 I INDEX    [thread4] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-01-12T17:55:13.700+0530 I INDEX    [thread4] build index done.  scanned 0 total records. 0 secs
+2018-01-12T17:55:13.700+0530 I COMMAND  [thread4] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 605ms
+2018-01-12T18:15:03.064+0530 I NETWORK  [conn3] end connection 127.0.0.1:54288 (0 connections now open)
+2018-01-12T18:15:08.066+0530 I CONTROL  [thread5] Ctrl-C signal
+2018-01-12T18:15:08.066+0530 I CONTROL  [consoleTerminate] got CTRL_C_EVENT, will terminate after current cmd ends
+2018-01-12T18:15:08.066+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-01-12T18:15:08.067+0530 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: The I/O operation has been aborted because of either a thread exit or an application request.
+2018-01-12T18:15:08.067+0530 F CONTROL  [thread4] Encountered an error in PeriodicRunnerASIO: The I/O operation has been aborted because of either a thread exit or an application request.
+2018-01-12T18:15:08.067+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-01-12T18:15:08.074+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-01-12T18:15:08.184+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-01-12T18:15:08.185+0530 I CONTROL  [consoleTerminate] now exiting
+2018-01-12T18:15:08.185+0530 I CONTROL  [consoleTerminate] shutting down with code:12
