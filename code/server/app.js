@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var multer = require('multer');
 
 var cors = require('cors')
 
@@ -14,7 +15,12 @@ var app = express();
 // view engine setup --> Dummy code - To be removed in future.
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
+app.use(function(req, res, next) { //allow cross origin requests
+  res.setHeader("Access-Control-Allow-Methods", "POST, PUT, OPTIONS, DELETE, GET");
+  res.header("Access-Control-Allow-Origin", "http://localhost");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 app.use(cors());
 // uncomment after placing your favicon in /public
@@ -25,12 +31,37 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//app.use('/api/users', users); // <-- note we're calling this API
 /**
  * Routes
  */
 var router = require('./router')(app);
 
+var storage = multer.diskStorage({ //multers disk storage settings
+  destination: function (req, file, cb) {
+      cb(null, './uploads/');
+  },
+  filename: function (req, file, cb) {
+      var datetimestamp = Date.now();
+      cb(null, file.fieldname + '-' + datetimestamp + '.' + file.originalname.split('.')[file.originalname.split('.').length -1]);
+  }
+});
+
+
+var upload = multer({ //multer settings
+              storage: storage
+          }).single('file');
+
+/** API path that will upload the files */
+app.post('/uploadfile', function(req, res) {
+  debugger;
+  upload(req,res,function(err){
+      if(err){
+           res.json({error_code:1,err_desc:err});
+           return;
+      }
+       res.json({error_code:0,err_desc:null});
+  });
+});
 
 
 // In production, we'll actually serve our angular app from express
