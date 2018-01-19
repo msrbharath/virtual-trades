@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var multer = require('multer');
 
-var cors = require('cors')
+var cors = require('cors');
 
 var app = express();
 //var index = require('./routes/index');

@@ -3,10 +3,11 @@
  */
 var mongoose = require('mongoose');
 var UserModel = require('./schemas/users');
+var ProductModel = require('./schemas/products');
 
 // Connections
 var developmentDb = 'mongodb://localhost/dev';
-var productionDb = 'mongodb://localhost/prod';
+var productionDb = 'mongodb://localhost/pro';
 var usedDb;
 
 // If we're in development...
@@ -32,7 +33,8 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 // Open the connection
 db.once('open', function callback () {
-  console.log('Databsae Connection Successfully Opened at ' + usedDb);
+  console.log('Database Connection Successfully Opened at ' + usedDb);
 });
 
-exports.users = UserModel;
+module.exports.users = UserModel;
+module.exports.products = ProductModel;
